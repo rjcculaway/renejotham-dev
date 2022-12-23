@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'PRINTF';
+	src: url('fonts/PRINTF-Regular.eot');
+	src: local('PRINTF'), local('fonts/PRINTF-Regular'),
+		url('fonts/PRINTF-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PRINTF-Regular.woff2') format('woff2'),
+		url('fonts/PRINTF-Regular.woff') format('woff'),
+		url('fonts/PRINTF-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

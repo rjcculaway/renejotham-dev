@@ -8,10 +8,11 @@
 	const scale = spring(1);
 </script>
 
-<div class="fixed bg-black h-full w-full">
+<slot />
+<div class="fixed left-0 top-0 -z-50 bg-black h-full w-full">
 	<Canvas>
-		<T.PerspectiveCamera makeDefault position={[0, 0, 0]} fov={25}>
-			<OrbitControls maxPolarAngle={degToRad(80)} enableZoom={false} target={{ y: 0.5 }} />
+		<T.PerspectiveCamera makeDefault position={[10, 10, 10]} fov={36}>
+			<OrbitControls maxPolarAngle={degToRad(80)} enableZoom={true} target={{ y: 0.5 }} />
 		</T.PerspectiveCamera>
 
 		<T.DirectionalLight castShadow position={[3, 10, 10]} />
@@ -39,5 +40,4 @@
 			<T.MeshStandardMaterial color="white" />
 		</T.Mesh>
 	</Canvas>
-	<slot />
 </div>
