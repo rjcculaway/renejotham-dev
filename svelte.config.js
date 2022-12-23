@@ -10,7 +10,10 @@ const config = {
 	preprocess: seqPreprocessor([vitePreprocess(), preprocessThrelte()]),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			components: './src/components'
+		}
 	}
 };
 

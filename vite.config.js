@@ -5,6 +5,11 @@ const config = {
 	plugins: [sveltekit()],
 	ssr: {
 		noExternal: ['three', 'troika-three-text']
+	},
+	resolve: {
+		alias: {
+			components: './src/components'
+		}
 	}
 };
 
